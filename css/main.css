@@ -1,0 +1,33 @@
+@import url('./variables.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./beneficios.css');
+@import url('./categorias.css');
+@import url('./productos.css');
+@import url('./contacto.css');
+@import url('./footer.css');
+@import url('./animaciones.css');
+/* Estas reglas generales mantienen el mismo estilo en toda la página. */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;color:var(--ink);background:#fff;font-family:Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer}
+img{display:block;max-width:100%}
+svg{width:20px;height:20px;flex-shrink:0}
+.container{width:min(calc(100% - 48px),var(--container));margin-inline:auto}
+.section{padding:60px 0}
+.section-heading{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:32px;text-align:center}
+.section-heading h2{font-size:clamp(25px,3vw,36px);letter-spacing:-.04em;margin:0;font-weight:800}
+.orange-line{display:inline-block;width:38px;height:5px;border-radius:20px;background:var(--orange);flex-shrink:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 20px;border-radius:10px;font-size:13px;font-weight:800;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 9px 20px rgba(6,37,70,.18)}
+.btn-primary{color:#fff;background:var(--orange);box-shadow:0 6px 14px rgba(255,121,0,.17)}
+.btn-primary:hover{background:#e66c00}
+.btn-outline{border:1px solid #6d8bb0;color:var(--navy);background:#fff}
+.btn svg{width:18px;height:18px}
+.skip-link{position:absolute;left:10px;top:-100px;background:white;padding:10px;z-index:9999}
+.skip-link:focus{top:10px}
+:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+@media(max-width:767px){.container{width:min(calc(100% - 32px),var(--container))}.section{padding:44px 0}.section-heading{gap:9px}.orange-line{width:26px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}

@@ -1,0 +1,16 @@
+/* El pie de página facilita encontrar enlaces y contactar a EMPAQ. */
+.footer{background:#061e38;color:white;padding:42px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.3fr .7fr 1fr 1fr;gap:38px}
+.footer-brand{color:white;font-size:29px}
+.footer-brand img{width:49px;height:49px}
+.footer p{font-size:12px;line-height:1.65;color:#d2ddea;max-width:250px}
+.footer h3{font-size:14px;margin:8px 0 18px}
+.footer-grid>div>a:not(.brand),.footer-grid>div>span{display:flex;align-items:center;gap:8px;font-size:12px;color:#d5e0ee;margin:0 0 12px;line-height:1.45}
+.footer-grid a:hover{color:#ffad59}
+.footer-grid svg{width:16px;height:16px}
+.footer-bottom{border-top:1px solid #ffffff22;margin-top:28px;padding:16px 0;font-size:11px;color:#9fb1c7}
+.whatsapp-float{position:fixed;right:22px;bottom:22px;width:56px;height:56px;display:grid;place-items:center;background:#168e62;color:white;border:2px solid white;border-radius:50%;box-shadow:0 8px 24px #001e3d55;z-index:40;transition:transform .2s}
+.whatsapp-float:hover{transform:scale(1.1)}
+.whatsapp-float svg{width:27px;height:27px}
+@media(max-width:900px){.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:550px){.footer-grid{grid-template-columns:1fr;gap:15px}.footer{padding-top:30px}.footer h3{margin:8px 0 13px}.whatsapp-float{right:14px;bottom:14px;width:50px;height:50px}}

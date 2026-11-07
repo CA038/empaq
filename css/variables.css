@@ -1,0 +1,6 @@
+:root{
+  --navy:#072b53;--navy-dark:#061f3a;--blue:#0a4c91;--orange:#ff7900;
+  --ink:#0b2343;--muted:#53627a;--soft:#f3f5f9;--white:#fff;
+  --radius:15px;--shadow:0 12px 32px rgba(5,35,70,.10);
+  --container:1180px;
+}

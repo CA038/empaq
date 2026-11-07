@@ -1,0 +1,14 @@
+/* Los productos destacados ofrecen una consulta directa sin carrito de compras. */
+.featured{padding-top:12px;padding-bottom:65px}
+.product-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.product-card{background:#f5f6f9;border-radius:15px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.product-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+.product-card img{width:100%;height:155px;object-fit:cover}
+.product-info{padding:13px;text-align:center}
+.product-info h3{margin:0;font-size:13px;font-weight:800}
+.product-info p{margin:5px 0 12px;color:var(--muted);font-size:12px}
+.product-quote{display:inline-flex;align-items:center;gap:4px;color:var(--blue);font-size:11px;font-weight:800}
+.product-quote svg{width:14px;height:14px}
+.product-quote:hover{color:var(--orange)}
+@media(max-width:950px){.product-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:550px){.product-grid{grid-template-columns:repeat(2,1fr);gap:10px}.product-card img{height:130px}.product-info{padding:10px}.product-info h3{font-size:12px}}

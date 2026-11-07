@@ -1,0 +1,4 @@
+/* Las transiciones acompañan la lectura y se desactivan si el usuario lo prefiere. */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.8,.2,1);transition-delay:var(--delay,0ms)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}

@@ -1,14 +1,28 @@
-/* Los productos destacados ofrecen una consulta directa sin carrito de compras. */
-.featured{padding-top:12px;padding-bottom:65px}
-.product-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
-.product-card{background:#f5f6f9;border-radius:15px;overflow:hidden;transition:transform .3s,box-shadow .3s}
-.product-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
-.product-card img{width:100%;height:155px;object-fit:cover}
-.product-info{padding:13px;text-align:center}
-.product-info h3{margin:0;font-size:13px;font-weight:800}
-.product-info p{margin:5px 0 12px;color:var(--muted);font-size:12px}
-.product-quote{display:inline-flex;align-items:center;gap:4px;color:var(--blue);font-size:11px;font-weight:800}
+/* La sección unificada de productos presenta cada línea con acceso a su catálogo emergente */
+.featured{padding-top:20px;padding-bottom:70px}
+.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.product-card{background:#fff;border:1px solid #e9edf3;border-radius:18px;overflow:hidden;box-shadow:0 4px 16px rgba(4,30,60,.06);transition:transform .3s,box-shadow .3s,border-color .3s;display:flex;flex-direction:column}
+.product-card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(4,30,60,.12);border-color:#cfdce8}
+.product-card-media{position:relative;background:#fbfcfd;padding:18px 16px;display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;cursor:pointer;overflow:hidden}
+.product-card-media .img-product{width:100%;height:100%;object-fit:contain;transition:opacity .35s ease,transform .4s ease}
+.product-card-media .img-stock{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .45s ease}
+.product-card:hover .product-card-media .img-stock{opacity:1;transform:scale(1.04)}
+.product-card:hover .product-card-media .img-product{opacity:0;transform:scale(.96)}
+.stock-pill{position:absolute;top:10px;left:10px;background:rgba(8,46,89,.92);color:#fff;font-size:10.5px;font-weight:700;padding:4px 10px;border-radius:20px;display:inline-flex;align-items:center;gap:5px;backdrop-filter:blur(6px);opacity:0;transform:translateY(-4px);transition:all .25s ease;z-index:2;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.stock-pill svg{width:12px;height:12px;color:var(--orange)}
+.product-card:hover .stock-pill{opacity:1;transform:translateY(0)}
+.product-badge{position:absolute;bottom:10px;right:10px;background:rgba(8,46,89,.92);color:#fff;font-size:11px;font-weight:700;padding:5px 12px;border-radius:20px;display:inline-flex;align-items:center;gap:6px;backdrop-filter:blur(6px);opacity:0;transform:translateY(4px);transition:all .25s ease;z-index:2;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.product-card:hover .product-badge{opacity:1;transform:translateY(0)}
+.product-badge svg{width:13px;height:13px;color:var(--orange)}
+.product-info{padding:18px 20px 22px;display:flex;flex-direction:column;flex:1}
+.product-info h3{margin:0 0 8px;font-size:16px;font-weight:800;color:var(--navy)}
+.product-info p{margin:0 0 18px;color:var(--muted);font-size:13px;line-height:1.45;flex:1}
+.product-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:14px;border-top:1px solid #eef2f7}
+.btn-sheet{background:#f1f5f9;border:0;color:var(--navy);font-size:12px;font-weight:700;display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:8px;cursor:pointer;transition:background .2s,color .2s}
+.btn-sheet svg{width:14px;height:14px;color:var(--orange)}
+.btn-sheet:hover{background:#e2e8f0;color:#080e18}
+.product-quote{display:inline-flex;align-items:center;gap:5px;background:var(--orange);color:#fff;font-size:12px;font-weight:800;padding:8px 14px;border-radius:8px;transition:background .2s,transform .2s;box-shadow:0 3px 8px rgba(255,121,0,.2)}
 .product-quote svg{width:14px;height:14px}
-.product-quote:hover{color:var(--orange)}
-@media(max-width:950px){.product-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:550px){.product-grid{grid-template-columns:repeat(2,1fr);gap:10px}.product-card img{height:130px}.product-info{padding:10px}.product-info h3{font-size:12px}}
+.product-quote:hover{background:#e66c00;transform:translateY(-1px)}
+@media(max-width:980px){.product-grid{grid-template-columns:repeat(2,1fr);gap:18px}}
+@media(max-width:620px){.product-grid{grid-template-columns:1fr;gap:16px}.product-actions{flex-direction:column;align-items:stretch}.product-quote{justify-content:center}.btn-sheet{justify-content:center}}

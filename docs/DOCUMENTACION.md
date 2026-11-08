@@ -19,20 +19,22 @@ Landing page estática, responsive y modular de EMPAQ, proveedor de etiquetas, e
 - `index.html`: HTML principal, SEO, carga de CSS y módulo JS.
 - `css/main.css`: importa todas las hojas CSS y estilos comunes.
 - `css/variables.css`: variables de color, sombras y tamaños.
-- `css/header.css`, `hero.css`, `beneficios.css`, `categorias.css`, `productos.css`, `contacto.css`, `footer.css`, `animaciones.css`: estilos independientes por sección.
-- `js/main.js`: integra los componentes, inicializa menú, WhatsApp, animaciones e iconos.
+- `css/header.css`, `hero.css`, `beneficios.css`, `productos.css`, `contacto.css`, `footer.css`, `animaciones.css`, `category-modal.css`: estilos independientes por sección.
+- `js/data/catalog.js`: base de datos estructurada con el catálogo completo, medidas y troqueles.
+- `js/main.js`: integra los componentes, inicializa menú, WhatsApp, animaciones, ventana emergente e iconos.
 - `js/components/header.js`: barra de contacto, logo, menú y navegación móvil.
 - `js/components/hero.js`: portada y botones principales.
 - `js/components/beneficios.js`: cuatro beneficios.
-- `js/components/categorias.js`: catálogo de seis categorías; datos en `categories`.
-- `js/components/productos.js`: productos destacados; datos en `products`.
+- `js/components/productos.js`: sección principal de productos con acceso a catálogo emergente; datos en `products`.
+- `js/components/category-modal.js`: ventana emergente interactiva para consultar todo el catálogo, medidas y troqueles por producto.
 - `js/components/contacto.js`: banner y CTA de contacto.
-- `js/components/footer.js`: enlaces, contacto y botón flotante.
+- `js/components/footer.js`: enlaces, contacto, ubicación física y botón flotante.
 - `js/menu.js`: menú móvil, Escape y cierre al navegar.
 - `js/whatsapp.js`: enlaces `wa.me` y mensajes por producto.
 - `js/animaciones.js`: entradas al hacer scroll con IntersectionObserver.
 - `assets/logos/`: símbolo original suministrado por el cliente.
-- `assets/productos/`: imágenes de prototipo.
+- `assets/productos/`: fotografías limpias de producto en fondo blanco.
+- `assets/stock/`: fotografías comerciales de stock que muestran cada producto en aplicación real (almacén, sellado de cajas, etiquetado de envases, POS, impresión térmica).
 - `assets/banners/`: imágenes de portada y CTA.
 
 ## Flujo de funcionamiento
@@ -73,9 +75,9 @@ No abrir directamente con `file://` porque se usan módulos ES6.
 - No agregar carrito, pagos ni librerías de iconos rellenos.
 
 ## Antes de publicar
-- Las imágenes de productos son **recortes de la maqueta conceptual aprobada**, no fotos verificadas del inventario. Reemplazarlas por imágenes reales autorizadas.
-- El símbolo circular original fue suministrado por el cliente; la palabra EMPAQ junto al símbolo es texto web. Si se recibe el logotipo completo oficial, sustituirlo sin redibujarlo.
+- Las imágenes de productos en `assets/productos/` se están actualizando con las fotografías y fichas oficiales extraídas del catálogo del cliente.
+- El símbolo original y los logotipos oficiales completos (`empaq-logo-completo.png` y `empaq-logo-badge.png`) se encuentran en `assets/logos/`.
 - Verificar afirmaciones comerciales como «entrega local» y «productos de calidad».
-- No se ha confirmado un correo oficial; por eso se omite.
+- Correo oficial confirmado e integrado: **ventas@empaqhn.com**.
 - El icono de WhatsApp se representa con `message-circle` de Lucide (outline), no con la marca oficial.
 - Revisar enlaces, rendimiento Lighthouse, accesibilidad, dominio y HTTPS.

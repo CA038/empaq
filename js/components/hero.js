@@ -9,7 +9,7 @@ export function hero() {
           <p>Calidad, variedad y asesoría especializada en San Pedro Sula.</p>
           <div class="hero-actions">
             <a href="#" class="btn btn-primary whatsapp-link" target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle"></i> Solicita tu cotización</a>
-            <a href="#categorias" class="btn btn-outline">Conoce nuestros productos <i data-lucide="arrow-right"></i></a>
+            <a href="#productos" class="btn btn-outline">Conoce nuestros productos <i data-lucide="arrow-right"></i></a>
           </div>
         </div>
         <div class="hero-visual reveal" aria-label="Productos industriales de empaque"><img src="./assets/banners/hero-productos.jpg" alt="Rollos de etiquetas, cintas, impresora y suministros de empaque" fetchpriority="high"></div>

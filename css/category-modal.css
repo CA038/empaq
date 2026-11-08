@@ -1,0 +1,38 @@
+/* Ventana emergente para explorar todo el catálogo de cada categoría */
+.cat-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(4,22,46,.82);backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:opacity .25s ease}
+.cat-modal.active{opacity:1;pointer-events:auto}
+.cat-modal-dialog{position:relative;background:#fff;border-radius:20px;max-width:860px;width:100%;max-height:88vh;display:flex;flex-direction:column;box-shadow:0 25px 60px rgba(0,0,0,.35);overflow:hidden;animation:modalSlideUp .3s ease}
+@keyframes modalSlideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+.cat-modal-header{padding:22px 26px 18px;border-bottom:1px solid #edf2f7;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;background:#fcfdfe}
+.cat-modal-header-copy h3{margin:0 0 6px;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-.03em}
+.cat-modal-header-copy p{margin:0;font-size:13px;color:var(--muted);line-height:1.4}
+.cat-modal-badge{display:inline-block;margin-top:8px;background:#ff790018;color:var(--orange);font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.04em}
+.cat-modal-close{background:#f1f4f8;border:0;color:#52647a;width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;transition:background .2s,color .2s}
+.cat-modal-close:hover{background:#e2e8f0;color:var(--ink)}
+.cat-modal-body{padding:24px 26px;overflow-y:auto;display:flex;flex-direction:column;gap:20px}
+.cat-modal-hero{background:#f8fafd;border:1px solid #dbe4ef;border-radius:14px;overflow:hidden;box-shadow:0 3px 12px rgba(4,30,60,.05)}
+.cat-modal-hero-media{position:relative;width:100%;height:220px;overflow:hidden;background:#082e59}
+.cat-modal-hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform .5s ease}
+.cat-modal-hero:hover .cat-modal-hero-media img{transform:scale(1.03)}
+.cat-modal-hero-pill{position:absolute;top:12px;left:12px;background:rgba(8,46,89,.92);color:#fff;font-size:11px;font-weight:800;padding:5px 12px;border-radius:20px;display:inline-flex;align-items:center;gap:6px;backdrop-filter:blur(6px);box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.cat-modal-hero-pill svg{width:13px;height:13px;color:var(--orange)}
+.cat-modal-hero-caption{padding:12px 16px;margin:0;font-size:13px;color:#334155;line-height:1.45;display:flex;align-items:center;gap:8px;background:#fcfdfe;border-top:1px solid #edf2f7}
+.cat-modal-hero-caption svg{width:16px;height:16px;color:var(--orange);flex-shrink:0}
+.cat-modal-hero-caption strong{color:var(--navy);font-weight:800}
+.cat-modal-section{background:#f8fafd;border:1px solid #e9edf4;border-radius:14px;padding:18px 20px}
+.cat-modal-section h4{margin:0 0 8px;font-size:16px;font-weight:800;color:var(--navy);display:flex;align-items:center;gap:8px}
+.cat-modal-section h4::before{content:'';width:4px;height:16px;background:var(--orange);border-radius:2px;display:inline-block}
+.cat-modal-section p{margin:0 0 12px;font-size:13px;color:#475569;line-height:1.5}
+.pill-grid{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.pill-tag{background:#fff;border:1px solid #d8e2ec;color:var(--navy);font-size:12px;font-weight:700;padding:5px 11px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+.subcat-box{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px;margin-top:10px}
+.subcat-title{font-size:13px;font-weight:800;color:var(--navy);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.subcat-badge{font-size:10px;color:var(--orange);background:#fff3e6;padding:2px 8px;border-radius:12px;font-weight:800}
+.specs-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px}
+.specs-table td{padding:8px 10px;border-bottom:1px solid #eef2f7}
+.specs-table td:first-child{font-weight:700;color:var(--navy);width:40%}
+.specs-table td:last-child{color:#475569}
+.cat-modal-footer{padding:16px 26px;border-top:1px solid #edf2f7;background:#fcfdfe;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.cat-modal-footer .btn-primary{flex:1;background:var(--orange);color:#fff}
+@media(max-width:600px){.cat-modal{padding:8px}.cat-modal-dialog{max-height:94vh;border-radius:16px}.cat-modal-header{padding:16px}.cat-modal-hero-media{height:170px}.cat-modal-body{padding:16px;gap:16px}.cat-modal-footer{flex-direction:column;padding:14px}}
+

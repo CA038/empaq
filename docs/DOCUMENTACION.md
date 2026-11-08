@@ -79,5 +79,5 @@ No abrir directamente con `file://` porque se usan módulos ES6.
 - El símbolo original y los logotipos oficiales completos (`empaq-logo-completo.png` y `empaq-logo-badge.png`) se encuentran en `assets/logos/`.
 - Verificar afirmaciones comerciales como «entrega local» y «productos de calidad».
 - Correo oficial confirmado e integrado: **ventas@empaqhn.com**.
-- El icono de WhatsApp se representa con `message-circle` de Lucide (outline), no con la marca oficial.
+- El botón flotante de WhatsApp utiliza el logotipo oficial vectorizado con degradado verde vibrante, indicador de estado en línea y diseño responsive en píldora/círculo.
 - Revisar enlaces, rendimiento Lighthouse, accesibilidad, dominio y HTTPS.

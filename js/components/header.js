@@ -17,5 +17,8 @@ export function header() {
     </div>
     <nav class="mobile-nav" id="mobile-menu" aria-label="Menú para dispositivos móviles" hidden>
       <a href="#inicio">Inicio</a><a href="#productos">Productos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+      <div class="mobile-nav-cta">
+        <a class="btn btn-primary whatsapp-link" href="#" target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle"></i> Solicita tu cotización</a>
+      </div>
     </nav></header>`;
 }

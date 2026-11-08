@@ -4,7 +4,7 @@ export function footer() {
     <div><a class="brand footer-brand" href="#inicio"><img src="./assets/logos/empaq-simbolo-original.png" alt="" width="54" height="54"><span>EMPAQ</span></a>
       <p>Empaques y Representaciones S. de R.L. de C.V. — Fabricante y convertidor de etiquetas adhesivas y soluciones de empaque industrial en Honduras.</p></div>
     <div><h3>Enlaces</h3><a href="#inicio">Inicio</a><a href="#productos">Productos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
-    <div><h3>Productos</h3><a href="#productos">Etiquetas y Troqueles</a><a href="#productos">Película Strech Film</a><a href="#productos">Cintas de empaque</a><a href="#productos">Papel POS</a><a href="#productos">Impresoras</a><a href="#productos">Ribbons Térmicos</a></div>
+    <div><h3>Productos</h3><a href="#productos" data-category-key="etiquetas">Etiquetas y Troqueles</a><a href="#productos" data-category-key="stretch">Película Strech Film</a><a href="#productos" data-category-key="cintas">Cintas de empaque</a><a href="#productos" data-category-key="papel-pos">Papel POS</a><a href="#productos" data-category-key="impresoras">Impresoras</a><a href="#productos" data-category-key="ribbons">Ribbons Térmicos</a></div>
     <div><h3>Contáctanos</h3><a href="tel:+50499043670"><i data-lucide="phone"></i> +504 9904-3670</a>
       <a href="mailto:ventas@empaqhn.com"><i data-lucide="mail"></i> ventas@empaqhn.com</a>
       <span><i data-lucide="map-pin"></i> 33 Calle, Sector El Polvorín (frente a CAMOSA), San Pedro Sula, Honduras</span>

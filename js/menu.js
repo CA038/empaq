@@ -7,5 +7,5 @@ export function initMenu() {
   button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';menu.hidden=!open;button.setAttribute('aria-expanded',String(open));button.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');});
   menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
   document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
-  window.matchMedia('(min-width: 900px)').addEventListener('change',close);
+  window.matchMedia('(min-width: 961px)').addEventListener('change',close);
 }
